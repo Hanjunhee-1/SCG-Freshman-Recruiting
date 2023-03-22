@@ -1,0 +1,350 @@
+#container {
+    width: 900px;
+    height: auto;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 38px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    text-align: center;
+    color: darkgreen;
+    font-size: 30px;
+}
+
+#search-container {
+    width: auto;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#search-keyword, #search-id {
+    width: 450px;
+    height: 40px;
+    border: solid 1px black;
+    border-radius: 12px;
+    font-size: 20px;
+    margin-left: 170px;
+    text-align: center;
+}
+
+#search-keyword::placeholder, #search-id::placeholder {
+    text-align: center;
+    font-size: 16px;
+}
+
+#search-button {
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border: solid 1px black;
+    border-radius: 12px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#write {
+    width: 560px;
+    height: 30px;
+    margin: 10px auto;
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: wheat;
+    align-items: center;
+    justify-content: center;
+}
+
+#write-button {
+    width: 200px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#bodrds-count {
+    width: 750px;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 80px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#count {
+    font-size: 25px;
+    color: sienna;
+}
+
+#boards {
+    width: 750px;
+    height: auto;
+    margin: 4px auto;
+    border-radius: 20px;
+    border: 2px dotted green;
+    
+}
+
+#boards-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border-left: 2px dotted green;
+    border-right: 2px dotted green;
+    padding: 8px;
+}
+
+th {
+    background-color: greenyellow;
+}
+
+td {
+    text-align: center;
+}
+
+tr {
+    border-bottom: 2px dotted green;
+}
+
+th:first-child {
+    border-radius: 20px 0 0 0;
+}
+
+th:last-child {
+    border-radius: 0 20px 0 0;
+}
+
+th:first-child, td:first-child {
+    border-left: none;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+#board-detail-view {
+    width: 700px;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#title-and-dates {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(220, 198, 224);
+    border-radius: 15px;
+}
+
+#board-content {
+    padding: 10px;
+    background-color: rgba(144, 238, 144, 1);
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+#edit-button {
+    cursor: pointer;
+    width: 690px;
+    padding: 4px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(144, 238, 144, 1);
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+#edit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: green;
+}
+
+#edit-button > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#edit-button > a:hover {
+    color: white;
+}
+
+.board-title {
+    margin-left: 20px;
+}
+
+#dates {
+    margin-right: 20px;
+}
+
+.content, .board-title {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.board-title {
+    width: 500px;
+    margin-right: 20px;
+    word-wrap: break-word;
+}
+
+.content {
+    width: 680px;
+    word-wrap: break-word;
+}
+
+.createdAt, .updatedAt {
+    color: gray;
+    font-size: 13px;
+}
+
+#write-board {
+    width: 700px;
+    height: auto;
+    margin: 10px auto;
+    background-color: rgba(116, 197, 75);
+    border-radius: 15px;
+}
+
+#write-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#write-title {
+    height: 34px;
+    font-size: 21px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#write-content {
+    width: auto;
+    margin-bottom: 10px;
+    resize: none;
+    border: none;
+    border-radius: 15px;
+    min-height: 300px;
+    padding: 15px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+#submit-button {
+    cursor: pointer;
+    width: 680px;
+    min-height: 30px;
+    margin: auto;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    background-color: greenyellow;
+}
+
+#submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: green;
+    color: white;
+}
+
+#edit-board {
+    width: 700px;
+    padding: 10px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 15px;
+    background-color: antiquewhite;
+}
+
+#edit-board-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#edit-board-form > div {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(220, 198, 224);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#edit-title {
+    width: 500px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(220, 198, 224);
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 21px;
+}
+
+#edit-content {
+    width: 680px;
+    min-height: 400px;
+    word-wrap: break-word;
+    text-align: justify;
+    border: none;
+    resize: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(144, 238, 144, 1);
+    font-size: 21px;
+}
+
+#edit-submit {
+    cursor: pointer;
+    width: 700px;
+    min-height: 30px;
+    margin: auto;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(144, 238, 144, 1);
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+#edit-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: green;
+    color: white;
+}

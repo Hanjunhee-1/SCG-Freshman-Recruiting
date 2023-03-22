@@ -1,0 +1,6 @@
+{
+    title: string
+    content: string
+    createdAt: date // 작성일
+    updatedAt: date // 수정일 (처음 생성할 때는 작성일과 수정일이 같음)
+},
